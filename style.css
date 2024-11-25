@@ -1,0 +1,232 @@
+/* Reset básico de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fontes e cores */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cores principais */
+:root {
+    --cor-principal: #6a4c9c;  /* Roxo */
+    --cor-secundaria: #ab7bc5;  /* Lavanda */
+    --cor-texto: #333;
+    --cor-fundo: #fff;
+    --cor-erro: #e74c3c;  /* Vermelho para erro */
+    --cor-sucesso: #2ecc71;  /* Verde para sucesso */
+    --cor-destaque: #f1c40f;  /* Amarelo para destaque */
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--cor-principal);
+}
+
+/* Estilo dos formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campos de input e textarea */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--cor-principal);
+    outline: none;
+}
+
+/* Botões */
+button,
+input[type="button"] {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+input[type="button"]:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* Tabela de Pontuação */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo das imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="file"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Detalhes e listas de respostas */
+details {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+details summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details ol {
+    margin-top: 10px;
+}
+
+/* Estilo de links */
+a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
